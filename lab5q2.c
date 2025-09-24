@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -61,13 +60,13 @@ int main() {
     Node* X1 = NULL;
     Node* X2 = NULL;
 
-    append(&X1, 1);
-    append(&X1, 2);
-    append(&X1, 3);
+    append(&X1, 10);
+    append(&X1, 20);
+    append(&X1, 30);
 
-    append(&X2, 4);
-    append(&X2, 5);
-    append(&X2, 6);
+    append(&X2, 40);
+    append(&X2, 50);
+    append(&X2, 60);
 
     printf("List X1 before concatenation: ");
     printList(X1);
