@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -107,18 +106,21 @@ int main() {
     Node* poly1 = NULL;
     Node* poly2 = NULL;
 
-    insertTerm(&poly1, 5, 3);
-    insertTerm(&poly1, 4, 2);
-    insertTerm(&poly1, 2, 0);
+    insertTerm(&poly1, 6, 5);
+    insertTerm(&poly1, 3, 2);
+    insertTerm(&poly1, 1, 0);
 
-    insertTerm(&poly2, 3, 4);
+    insertTerm(&poly2, 4, 5);
     insertTerm(&poly2, 2, 3);
-    insertTerm(&poly2, 7, 0);
+    insertTerm(&poly2, 5, 1);
 
     Node* sum = addPolynomials(poly1, poly2);
 
+    printf("Polynomial 1: ");
     display(poly1);
+    printf("Polynomial 2: ");
     display(poly2);
+    printf("Sum: ");
     display(sum);
 
     freeList(poly1);
